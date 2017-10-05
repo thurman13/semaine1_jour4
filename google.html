@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8" />
+		<title>Google</title>
+
+		<!--favicon-->
+		<link rel="icon" type="image/x-icon" href="http://www.webrankinfo.com/dossiers/wp-content/uploads/google-logo-carre-2015-09-400.png" />
+	
+		<!--bd google icon-->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	
+		<link rel="stylesheet" type="text/css" href="style_google.css">
+    </head>
+
+	<body onLoad="setTimeout('open_infos()', 10000)">
+
+		<!-- HEADER -->
+ 		<ul>
+			<li><a href="https://www.theguardian.com/technology/2013/aug/14/google-gmail-users-privacy-email-lawsuit" target="_blank">Gmail</a></li>
+			<li><a href="http://adieu-et-a-demain.fr" target="_blank">Images</a></li>
+			<li><a href="https://www.google.fr/intl/fr/about/products/" target="_blank"><i class="material-icons">apps</i></a></li>
+			<li><a href="http://kaamelott-soundboard.2ec0b4.fr/#son/a_roulettes" target="_blank"><i class="material-icons">notifications</i></a></li>
+			<li><a href="https://myaccount.google.com/" target="_blank"><i class="material-icons">account_circle</i></a></li>
+ 		</ul>
+
+    	<!--contenu à faire apparaître-->
+		<section id = "bloc_central" style= "display: none">
+
+  		<!-- GOOGLE DOODLE --> 
+        <div class="google">
+      	 	<a id="google_logo">
+            <img src="img/google_logospecial.gif" alt="photo_google_doodle_france.gif" title="logo_des_prof"></a>
+      	</div>
+
+      	<!-- FORM--> 
+      	<div class="form">  
+            <form>
+              	<label for="form_search"></label>
+              	<div class=search>
+             	 	<input type="text" id="form_search" value=" " onclick="javascript:this.value=''"/>    
+             	 </div>
+           	</form>
+       	</div>
+
+         <!-- BUTTONS GOOGLE -->
+		<div class="buttons">  
+			<input type="submit" value="Recherche Google" id="google_search" onclick="RedirectionJavascript()">
+			<input type="submit" value="J'ai de la chance" id="google_lucky"> 
+		</div>
+    
+    	<!-- BUTTONS GRILLE -->
+      	<div style="text-align: center">
+            
+        </section>
+
+        <div id="bouton_affichage"><input  type="submit" value="AFFICHER LES ÉLÉMENTS CENTRAUX" /></div>
+
+		<!-- FOOTER -->
+    <footer>
+    	<ul class="footer-left">
+    		<li><a href="#" target="_blank">Publicité</a></li>
+    		<li><a href="#" target="_blank">Entreprise</a></li>
+          	<li><a href="#" target="_blank">A propos</a></li> 
+        </ul>
+        
+        <ul class="footer-right">    
+          	<li><a href="#" target="_blank">Confidentialité</a></li>
+         	<li><a href="#" target="_blank">Conditions d'utilisation</a></li>
+          	<li><a href="#" target="_blank">Paramètres</a></li>
+        </ul>       
+    </footer>      
+
+      <script src="scripts/main.js"></script>
+  </body>
+</html>
